@@ -16,7 +16,7 @@ def main():
         load_dotenv('./.env')
 
     # When running on Azure App Service you should use the production settings.
-    settings_module = "DjangoGram.production" if 'WEBSITE_HOSTNAME' in os.environ else 'DjangoGram.settings'
+    settings_module = "DjangoGram.DjangoGram.production" if 'WEBSITE_HOSTNAME' in os.environ else 'DjangoGram.DjangoGram.settings'
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
 
     try:
