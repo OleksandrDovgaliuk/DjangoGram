@@ -3,8 +3,8 @@ from django.views.decorators.http import require_POST
 from django.views.generic import ListView, CreateView
 from django.urls import reverse_lazy, reverse
 
-from posts.forms import PostForm
-from posts.models import Post
+from DjangoGram.posts.forms import PostForm
+from DjangoGram.posts.models import Post
 
 
 class HomePageView(ListView):

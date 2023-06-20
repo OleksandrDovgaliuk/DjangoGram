@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'posts'
+    'DjangoGram.accounts.apps.AccountsConfig',
+    'DjangoGram.posts.apps.PostsConfig'
 ]
 
 AUTH_USER_MODEL = "accounts.User"
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DjangoGram.urls'
+ROOT_URLCONF = 'DjangoGram.DjangoGram.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DjangoGram.wsgi.application'
+WSGI_APPLICATION = 'DjangoGram.DjangoGram.wsgi.application'
 
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
